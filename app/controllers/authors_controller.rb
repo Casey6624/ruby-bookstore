@@ -13,7 +13,7 @@ end
 def create
 @author=Author.new(author_params)
 if @author.save
-redirect_to @authors_path
+redirect_to @author
 else
 render "new"
 end
